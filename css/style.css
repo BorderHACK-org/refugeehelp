@@ -5,8 +5,7 @@ html,body {
 	margin:0px;
 	padding:0px;
 	font-family: "Roboto", Calibri, Times;
-	/*font-size: large;*/
-	background-image: url(C:/Users/dimitri/Documents/GitHub/refugeehelp/img/bg.png);
+	background-image: url(/img/bg.png);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 	}	
@@ -61,6 +60,9 @@ html,body {
 		color:#fff;
 	}
 	
+	#select{
+		width: 75%;
+	}
 
 	.footer {
 	    display:block;
