@@ -3,99 +3,63 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>refugee page</title>
-  <link rel="stylesheet" type="text/css" href="C:/Users/dimitri/Desktop/need.it/css/style.css"></link>
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  
-  <script>
-  $(function() {
-    $( "#datepicker" ).datepicker();
-  });
-  </script>
 
-
-<!---<script type="text/javascript" src="C:/Users/dimitri/Desktop/need.it/js/map.js"></script>-->
-	
-	<style>
-		.column-left {width:33%;}
-		.column-right {width:33%;}
-		.column-center {width:33%;}
-		#target {
-        width: 345px;
-      }
-    </style>
-
+	<meta charset=utf-8 />
+	<link rel="stylesheet" type="text/css" href="C:/Users/dimitri/Documents/Github/Refugeehelp/css/style.css"></link>
+    <style>
+	.left {width: 33.33%;}
+	.center {width: 33.33%;}
+	.right {width: 33.33%;}
+	</style>	
 </head>
 
 
-<body>
+	<body>
 
-	<div class="header">our logo goes here</div>
+		<div class="header"> 
+			
+			<p>our logo goes here</p>
+	
+		</div>
 
-	<div class="column-left">
-	   <span id="colspan">
-		   I am currently located in 
-		   </br>
-		   </br>
-		   <input id="pac-input" class="controls" type="text"
-        placeholder="Enter a location">
-    <div id="type-selector" class="controls">
-      <input type="radio" name="type" id="changetype-all" checked="checked">
-      <label for="changetype-all">All</label>
+			<div class="left" id="container">
+		    
+			<p id="demo"> Where am I</p>
+		
+			<button onclick="getLocation()">locate me</button>
+			
+			
+			<div id="mapholder"></div>
+			<script id="container" src="C:/Users/dimitri/Documents/Github/Refugeehelp/js/locate.js"></script>
+		</div>
+		
+		<div class="center" id="container"> 
+				<p>I'm staying here until</p>
+				<p>Date: <input type="text"></p>
+		</div>   
 
-      <input type="radio" name="type" id="changetype-establishment">
-      <label for="changetype-establishment">Establishments</label>
-
-      <input type="radio" name="type" id="changetype-address">
-      <label for="changetype-address">Addresses</label>
-
-      <input type="radio" name="type" id="changetype-geocode">
-      <label for="changetype-geocode">Geocodes</label>
-    </div>
-    <div id="map"></div>
-	<script src="C:/Users/dimitri/Desktop/need.it/js/locate.js"></script> 
-  </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZN4jkx45WfRjhjRKdwy_uCBHSGObQ3Yc&libraries=places&callback=initAutocomplete"
-         async defer></script>
-	   </span>
-	</div>
+		
+		<div class="right" id="container"> <p>I need</p>
+		   
+			<p><select>
+				<option value="volvo">Clothes</option>
+				<option value="saab">Food</option>
+				<option value="mercedes">Money</option>
+				<option value="audi">Job</option>
+			</select></p>
+			
+				<p><select>
+					<option value="volvo">Clothes</option>
+					<option value="saab">Food</option>
+					<option value="mercedes">Money</option>
+					<option value="audi">Job</option>
+				</select></p>
+		</div>
  
-	<div class="column-center">
-	   <span id="colspan">
-		   I'm staying here until 
-		   </br>
-		   </br>
-		   Date: <input type="text" id="datepicker">
-	   </span>
-	</div>   
+		<div class="footer"><p>general information container</p>
 	
-	<div class="column-right">
-	   <span id="colspan">
-		   I need 
-		   </br>
-		   </br>
-			<select autofocus>
-				<option value="volvo">Clothes</option>
-				<option value="saab">Food</option>
-				<option value="mercedes">Money</option>
-				<option value="audi">Job</option>
-			</select>
-		   </br>
-		   </br>
-		    <select autofocus>
-				<option value="volvo">Clothes</option>
-				<option value="saab">Food</option>
-				<option value="mercedes">Money</option>
-				<option value="audi">Job</option>
-			</select>
-	   </span>
-	</div>
+		</div>   
 	
-	<div class="footer">general information container</div>   
-	
-</body>
+	</body>
 
 </html>
