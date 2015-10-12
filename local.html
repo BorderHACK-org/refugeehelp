@@ -5,51 +5,48 @@
 <head>
 
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="C:/Users/dimitri/Documents/Github/Refugeehelp/css/style.css">
+	<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=9)">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<style>
 		.left {width: 50%;}
 		.right {width: 50%;}
 	</style>
 	
-	
-	
 </head>
 	
 <body>
 
-	<div class="header"><p>our logo goes here</p></div>
+	<div class="header"><a href="http://needit.ntemposd.me/">LOGO</a></div>
 	
 		<div class="left" id="container">
-		    
-			<p>test</p>
-		
-			<button onclick="getLocation()">send my location</button>
-			
-			<p id="demo"></p>
-				<script></script>
-		</div>
-
-		
-		<div class="right" id="container"> <p>I can offer</p>
-		   
-			<p><select>
-				<option value="volvo">Clothes</option>
-				<option value="saab">Food</option>
-				<option value="mercedes">Money</option>
-				<option value="audi">Job</option>
-			</select></p>
-			
-				<p><select>
+			<h3>I offer</h3>
+				<p><select id="select">
 					<option value="volvo">Clothes</option>
 					<option value="saab">Food</option>
 					<option value="mercedes">Money</option>
 					<option value="audi">Job</option>
-				</select></p>
+				</select>
+				</p>
+			
+				<p><select id="select">
+					<option value="volvo">Clothes</option>
+					<option value="saab">Food</option>
+					<option value="mercedes">Money</option>
+					<option value="audi">Job</option>
+				</select>
+				</p>
+		</div>
+
+		<div class="right" id="container"> 
+				<h3>Where are you?</h3>
+				<button onclick="getLocation()">locate me</button>
+				<p id="demo"></p>
+					<script id="container" src="js/locate.js"></script>
 		</div>
    
    
-	<div class="footer"><p>general information container</p></div>
+	<div class="footer">general information container</div>
 
 </body>
 

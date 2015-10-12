@@ -4,11 +4,19 @@ html,body {
 	width:100%;
 	margin:0px;
 	padding:0px;
-	font-family: "Roboto", Calibri, Times;
-	background-image: url(/img/bg.png);
+	font-family: "Calibri", Roboto, Times;
+	background-image: url(/img/bg_white.png);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
-	}	
+	}
+	
+	a {
+	 color:black;
+	 text-align:center;
+	}
+	
+	#calendar {
+	}
 	
 	
 	.header {
@@ -18,10 +26,8 @@ html,body {
 	    width: 100%;
 	    text-align: center;
 	    background-color: #ffffff; 
-	    border-style: dotted; 
-	    border-width: 2px;
+	    border-bottom: 2px dotted;
 	}
-	
 	
 	
 	.left { 
@@ -29,7 +35,7 @@ html,body {
 		height: 100%;
 		width: 100%;
 		text-align: center;
-		background-color: #ffffff;
+		background-color: #fff;
 	}
 	
 	.right {
@@ -37,7 +43,8 @@ html,body {
 		height: 100%;
 		width: 100%;
 		text-align: center;
-		background-color: #ff6fff;
+		background-color: #B3FFB3;
+		border: 100px;
 	}
 	
 	.center {
@@ -48,17 +55,19 @@ html,body {
 	}
 	
 	#container{
-		height: 40%;
-			
 		position: relative;
-	    opacity: 0.75;  
 		top: 40%;
+		height: 40%;		
+		opacity: 0.75;
+		border: 0px solid;
+		border-color: #ffffff;
+		border-radius: 15px;
 	}
 	
 	#container:hover {
-		background:#3074a4;
-		color:#fff;
+		background-color: #B3FFB3;
 	}
+	
 	
 	#select{
 		width: 75%;
@@ -71,7 +80,6 @@ html,body {
 	    width: 100%;
 	    text-align: center;
         background-color: #ffffff;		
-	    border-style: dotted; 
-	    border-width: 2px;
+		border-top: 2px dotted;
 	}
 	
