@@ -5,63 +5,60 @@
 <head>
 
 	<meta charset=utf-8 />
-	<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=9)">
 	<link rel="stylesheet" type="text/css" href="css/style.css"></link>
-	<!--<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css"/>-->
-	<link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css'/></link>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script>
-	$(function() {
- 		$("#calendar" ).datepicker();
-	});
-	</script>
-	<style>
+    <style>
 	.left {width: 33.33%;}
 	.center {width: 33.33%;}
 	.right {width: 33.33%;}
-	</style>
+	</style>	
 </head>
 
 
-<body>
+	<body>
 
-	<div class="header"><a href="http://needit.ntemposd.me/">LOGO</a></div>
+		<div class="header"> 
+			
+			<p>our logo goes here</p>
+	
+		</div>
 
-		<div class="left" id="container">
-			<h3>I need</h3>
-				<p><select id="select">
-					<option value="volvo">Clothes</option>
-					<option value="saab">Food</option>
-					<option value="mercedes">Money</option>
-					<option value="audi">Job</option>
-				</select>
-				</p>
+			<div class="left" id="container">
+		    
+			<p>test location</p>
+		
+			<button onclick="getLocation()">locate me</button>
+			
+			<p id="demo"></p>
+			<script id="container" src="js/locate.js"></script>
+		</div>
+		
+		<div class="center" id="container"> 
+				<p>I'm staying here until</p>
+				<p>Date: <input type="text"></p>
+		</div>   
+
+		
+		<div class="right" id="container"> <p>I need</p>
+			</br>
+			<p><select id="select">
+				<option value="volvo">Clothes</option>
+				<option value="saab">Food</option>
+				<option value="mercedes">Money</option>
+				<option value="audi">Job</option>
+			</select></p>
 			
 				<p><select id="select">
 					<option value="volvo">Clothes</option>
 					<option value="saab">Food</option>
 					<option value="mercedes">Money</option>
 					<option value="audi">Job</option>
-				</select>
-				</p>
-		
-		</div>
-		
-		<div class="center" id="container"> 
-				<h3>I'm staying here until</h3>
-				<input type="text" id="calendar">
-		</div>   
-
-		<div class="right" id="container">
-				<h3>Where are you?</h3>
-				<button onclick="getLocation()">locate me</button>
-				<p id="demo"></p>
-					<script id="container" src="js/locate.js"></script>
+				</select></p>
 		</div>
  
-	<div class="footer">general information container</div>   
+		<div class="footer"><p>general information container</p>
 	
-</body>
+		</div>   
+	
+	</body>
 
 </html>
