@@ -12,74 +12,83 @@ html,body {
 	
 	a {
 	 color:black;
-	 text-align:center;
 	}
 	
 	#calendar {
 	}
 	
+	h3.first{
+		padding-top: 7px;
+	}
 	
-	.header {
+	div.header {
+		z-index: +10;
 		display:block;
 	    position: fixed;
 	    top: 0;
 	    width: 100%;
+		height: 7%;
 	    text-align: center;
 	    background-color: #ffffff; 
-	    border-bottom: 2px dotted;
+	    border-bottom: 1px dotted;
 	}
 	
 	
-	.left { 
+	div.left { 
 		float:left;
 		height: 100%;
 		width: 100%;
 		text-align: center;
-		background-color: #fff;
 	}
 	
-	.right {
+	div.right {
 		float: right;
 		height: 100%;
 		width: 100%;
 		text-align: center;
 		background-color: #B3FFB3;
-		border: 100px;
+		opacity: 0.6;
 	}
 	
-	.center {
+	div.center {
 		display: inline-block;
 		height: 100%;
 		width: 100%;
 		text-align: center; 
 	}
 	
-	#container{
-		position: relative;
-		top: 40%;
-		height: 40%;		
-		opacity: 0.75;
-		border: 0px solid;
-		border-color: #ffffff;
-		border-radius: 15px;
+	.container {
+		position: relative;	
+		width: 100%;
+		top: 35%;
 	}
 	
-	#container:hover {
+	.container:hover {
+		position: relative;
+		opacity: 0.7;
 		background-color: #B3FFB3;
 	}
 	
-	
-	#select{
-		width: 75%;
+	.container-right {
+		position: relative;	
+		width: 100%;
+		top: 35%;
 	}
+	
+	.container-right:hover {
+		position: relative;
+		background-color: #ffffff;
+	}
+	
 
-	.footer {
+	div.footer {
 	    display:block;
 	    position: fixed;
 	    bottom: 0;
 	    width: 100%;
+		height: 7%;
 	    text-align: center;
         background-color: #ffffff;		
-		border-top: 2px dotted;
+		border-top: 1px dotted;
 	}
 	

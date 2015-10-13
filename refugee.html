@@ -6,58 +6,64 @@
 
 	<meta charset=utf-8 />
 	<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=9)">
-	<link rel="stylesheet" type="text/css" href="css/style.css"></link>
-	<!--<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css"/>-->
+	
 	<link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css'/></link>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	
+    <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script>
-	$(function() {
- 		$("#calendar" ).datepicker();
-	});
-	</script>
+	
 	<style>
-	.left {width: 33.33%;}
-	.center {width: 33.33%;}
-	.right {width: 33.33%;}
+	div.left {width: 33.33%;}
+	div.center {width: 33.33%;}
+	div.right {width: 33.33%;}
 	</style>
 </head>
 
 
 <body>
 
-	<div class="header"><a href="http://needit.ntemposd.me/">LOGO</a></div>
+	<div class="header"><p><a href="http://needit.ntemposd.me/">This is a Beta</a></p></div>
 
-		<div class="left" id="container">
-			<h3>I need</h3>
-				<p><select id="select">
+		<div class="left">
+			<div class="container">
+				<h3 class="first">I need</h3>
+				<p><select>
 					<option value="volvo">Clothes</option>
 					<option value="saab">Food</option>
 					<option value="mercedes">Money</option>
 					<option value="audi">Job</option>
-				</select>
-				</p>
-			
-				<p><select id="select">
+				</select></p>
+				
+				<p><select>
 					<option value="volvo">Clothes</option>
 					<option value="saab">Food</option>
 					<option value="mercedes">Money</option>
 					<option value="audi">Job</option>
-				</select>
-				</p>
-		
+				</select></p>
+			</div>
 		</div>
+
+	
 		
-		<div class="center" id="container"> 
+		<div class="center">
+			<div class="container">
+				<script>
+					$(function() {
+					$("#calendar" ).datepicker();
+					});
+				</script>
 				<h3>I'm staying here until</h3>
 				<input type="text" id="calendar">
-		</div>   
-
-		<div class="right" id="container">
+			</div>   
+		</div>
+		
+		<div class="right">
+			<div class="container">
 				<h3>Where are you?</h3>
 				<button onclick="getLocation()">locate me</button>
 				<p id="demo"></p>
-					<script id="container" src="js/locate.js"></script>
+					<script src="js/locate.js"></script>
+			</div>
 		</div>
  
 	<div class="footer">general information container</div>   

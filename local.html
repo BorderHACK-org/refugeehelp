@@ -9,19 +9,20 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<style>
-		.left {width: 50%;}
-		.right {width: 50%;}
+		div.left {width: 50%;}
+		div.right {width: 50%;}
 	</style>
 	
 </head>
 	
 <body>
 
-	<div class="header"><a href="http://needit.ntemposd.me/">LOGO</a></div>
+	<div class="header"><p><a href="http://needit.ntemposd.me/">This is a Beta</a></p></div>
 	
-		<div class="left" id="container">
-			<h3>I offer</h3>
-				<p><select id="select">
+		<div class="left"> 
+			<div class="container">
+			<h3 class="first">I offer</h3>
+				<p><select>
 					<option value="volvo">Clothes</option>
 					<option value="saab">Food</option>
 					<option value="mercedes">Money</option>
@@ -29,20 +30,23 @@
 				</select>
 				</p>
 			
-				<p><select id="select">
+				<p><select>
 					<option value="volvo">Clothes</option>
 					<option value="saab">Food</option>
 					<option value="mercedes">Money</option>
 					<option value="audi">Job</option>
 				</select>
 				</p>
+			</div>
 		</div>
 
-		<div class="right" id="container"> 
+		<div class="right">
+			<div class="container"> 
 				<h3>Where are you?</h3>
 				<button onclick="getLocation()">locate me</button>
 				<p id="demo"></p>
 					<script id="container" src="js/locate.js"></script>
+			</div>
 		</div>
    
    
