@@ -5,6 +5,7 @@
 <head>
 
 	<meta charset=utf-8 />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=9)">
 	
 	<link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css'/></link>
@@ -17,12 +18,25 @@
 	div.center {width: 33.33%;}
 	div.right {width: 33.33%;}
 	</style>
+	
+	<script>
+		if variable  != null) {
+			run 
+			else pop up a container submit request
+			div 
+			top 50
+			background color green
+			
+	</script>
 </head>
 
 
 <body>
 
-	<div class="header"><p><a href="http://needit.ntemposd.me/">This is a Beta</a></p></div>
+	<nav>
+		<a href="index.html">Product</a>
+        <a href="cause.html">Cause</a>
+    </nav>
 
 		<div class="left">
 			<div class="container">
@@ -33,7 +47,7 @@
 					<option value="mercedes">Money</option>
 					<option value="audi">Job</option>
 				</select></p>
-				
+
 				<p><select>
 					<option value="volvo">Clothes</option>
 					<option value="saab">Food</option>
@@ -52,21 +66,35 @@
 					$("#calendar" ).datepicker();
 					});
 				</script>
-				<h3>I'm staying here until</h3>
+				<h3 class="first">I'm staying here until</h3>
 				<input type="text" id="calendar">
 			</div>   
 		</div>
 		
 		<div class="right">
 			<div class="container">
-				<h3>Where are you?</h3>
+				<h3 class="first">Where are you?</h3>
 				<button onclick="getLocation()">locate me</button>
 				<p id="demo"></p>
 					<script src="js/locate.js"></script>
+					<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+    // Store
+    localStorage.setItem("demo", "");
+    // Retrieve
+    document.getElementById("demo").innerHTML = localStorage.getItem("demo");
+	
+} else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
 			</div>
 		</div>
+		
+		
  
-	<div class="footer">general information container</div>   
+	<div class="footer"><a href="team.html">About</a></div>   
 	
 </body>
 
