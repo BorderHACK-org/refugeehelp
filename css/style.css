@@ -91,6 +91,17 @@ html,body {
 		top: 25%;
 	}
 	
+	.go {
+		position: relative;
+		background-image: url(/img/leftgo.png);
+		background-repeat: no-repeat;
+	}
+	
+	.go:hover{
+		background-image: url(/img/leftgohover.png);
+		background-repeat: no-repeat;
+	}
+	
 	.container-right:hover {
 		position: relative;
 		background-color: #ffffff;
